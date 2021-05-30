@@ -50,6 +50,6 @@ func IsToeplitzMatrix(matrix [][]int) bool {
 			k++
 		}
 	}
-	
+
 	return true
 }
