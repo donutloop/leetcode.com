@@ -4,6 +4,7 @@ Leetcode solutions
 * [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 
 * [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+* [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 * [405. Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)
 * [766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)
 * [1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)
