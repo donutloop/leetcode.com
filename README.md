@@ -7,6 +7,8 @@ Leetcode solutions
 * [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 * [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 * [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+* [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
 * [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 
 * [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
