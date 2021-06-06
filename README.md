@@ -10,6 +10,7 @@ Leetcode solutions
 * [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 * [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 * [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+* [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
 * [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 
 * [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
