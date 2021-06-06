@@ -2,6 +2,7 @@
 Leetcode solutions
 
 * [1. Two Sum](https://leetcode.com/problems/two-sum/)
+* [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 * [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 
 * [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
