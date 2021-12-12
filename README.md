@@ -15,6 +15,7 @@ Leetcode solutions
 * [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 
 * [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+* [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 * [178. Rank Scores](https://leetcode.com/problems/rank-scores/)
 * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
