@@ -28,4 +28,5 @@ Leetcode solutions
 * [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
 * [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)
 * [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
+* [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
 * [2043. Simple Bank System](https://leetcode.com/problems/simple-bank-system/)
