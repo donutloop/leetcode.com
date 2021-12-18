@@ -32,5 +32,6 @@ Leetcode solutions
 * [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)
 * [1913. Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)
 * [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
+* [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/)
 * [2042. Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/)
 * [2043. Simple Bank System](https://leetcode.com/problems/simple-bank-system/)
