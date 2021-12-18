@@ -23,6 +23,7 @@ Leetcode solutions
 * [263. Ugly Number](https://leetcode.com/problems/ugly-number/)
 * [405. Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)
 * [766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/)
+* [1309. Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/submissions/)
 * [1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 * [1387. Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/)
 * [1446. Consecutive Characters](https://leetcode.com/problems/consecutive-characters/)
