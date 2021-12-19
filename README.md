@@ -31,6 +31,7 @@ Leetcode solutions
 * [1486. XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/)
 * [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
 * [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)
+* [1812. Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/)
 * [1913. Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)
 * [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
 * [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/)
