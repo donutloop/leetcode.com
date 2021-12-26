@@ -8,26 +8,26 @@ func maxSlidingWindow(nums []int, k int) []int {
 		return nums
 	}
 
-	var maxNums []int
+	l := 0
 	max := findMax(nums, 0, k-1)
-	maxNums = append(maxNums, max.n)
+	nums[l] = max.n
 
 	for i := k; i < len(nums); i++ {
-
+		l++
 		j := i - k + 1
 		if max.i < j {
 			max = findMax(nums, j, i)
 		}
 
 		if max.n > nums[i] {
-			maxNums = append(maxNums, max.n)
+			nums[l] = max.n
 		} else {
-			maxNums = append(maxNums, nums[i])
+			nums[l] = nums[i]
 			max = maxNumber{n: nums[i], i: i}
 		}
 	}
 
-	return maxNums
+	return nums[:l+1]
 }
 
 type maxNumber struct {
