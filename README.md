@@ -33,7 +33,7 @@ Leetcode solutions
 * [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 * [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 * [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)
-* 
+* [136. Single Number](https://leetcode.com/problems/single-number/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
