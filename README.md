@@ -17,6 +17,7 @@ Leetcode solutions
 * [46. Permutations](https://leetcode.com/problems/permutations/)
 * [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/submissions/)
 * [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+* [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
