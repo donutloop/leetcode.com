@@ -15,6 +15,7 @@ Leetcode solutions
 * [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) 
 * [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 * [46. Permutations](https://leetcode.com/problems/permutations/)
+* [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/submissions/)
 * [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
