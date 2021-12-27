@@ -45,6 +45,7 @@ Leetcode solutions
 * [155. Min Stack](https://leetcode.com/problems/min-stack/)
 * [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 * [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+* [169. Majority Element](https://leetcode.com/problems/majority-element/)
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 * [178. Rank Scores](https://leetcode.com/problems/rank-scores/)
 * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
