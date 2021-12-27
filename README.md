@@ -38,3 +38,4 @@ Leetcode solutions
 * [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/)
 * [2042. Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/)
 * [2043. Simple Bank System](https://leetcode.com/problems/simple-bank-system/)
+* [2114. Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/)
