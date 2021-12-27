@@ -43,6 +43,7 @@ Leetcode solutions
 * [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 * [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 * [155. Min Stack](https://leetcode.com/problems/min-stack/)
+* [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 * 
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 * [178. Rank Scores](https://leetcode.com/problems/rank-scores/)
