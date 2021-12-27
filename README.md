@@ -41,7 +41,9 @@ Leetcode solutions
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 * [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
 * [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-* [154. Find Minimum in Rotated Sorted Array II]()
+* [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
+* [155. Min Stack](https://leetcode.com/problems/min-stack/)
+* 
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 * [178. Rank Scores](https://leetcode.com/problems/rank-scores/)
 * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
