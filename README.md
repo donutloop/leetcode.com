@@ -35,6 +35,7 @@ Leetcode solutions
 * [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)
 * [136. Single Number](https://leetcode.com/problems/single-number/)
 * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+* [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
 * 
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
