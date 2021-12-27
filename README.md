@@ -26,6 +26,7 @@ Leetcode solutions
 * [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
 * [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 * [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+* [100. Same Tree](https://leetcode.com/problems/same-tree/)
 * [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 * [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
