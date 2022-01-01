@@ -1,6 +1,8 @@
 package Day_of_the_Year
 
-import "time"
+import (
+	"time"
+)
 
 func dayOfYear(date string) int {
 	d, err := time.Parse("2006-01-02", date)
