@@ -1,4 +1,4 @@
-package _07__Perfect_Number
+package Perfect_Number
 
 import "math"
 
