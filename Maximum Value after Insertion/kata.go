@@ -31,7 +31,6 @@ func maxValue(n string, x int) string {
 		k := i
 		for j := i; j < len(n); j++ {
 			if ok && y < n[j] {
-
 				b[k] = y
 				k++
 				b[k] = n[j]
