@@ -6,6 +6,7 @@ type MovingAverage struct {
 	currentLen int
 	size       int
 	list       *list.List
+	sum        float64
 }
 
 func Constructor(size int) MovingAverage {
@@ -19,12 +20,11 @@ func (mv *MovingAverage) Next(val int) float64 {
 	mv.currentLen++
 	mv.list.PushBack(val)
 	if mv.currentLen > mv.size {
+		n := mv.list.Front().Value.(int)
 		mv.list.Remove(mv.list.Front())
+		mv.sum = mv.sum - float64(n)
 		mv.currentLen--
 	}
-	var avg float64
-	for e := mv.list.Front(); e != nil; e = e.Next() {
-		avg += float64(e.Value.(int))
-	}
-	return avg / float64(mv.currentLen)
+	mv.sum = mv.sum + float64(val)
+	return mv.sum / float64(mv.currentLen)
 }
