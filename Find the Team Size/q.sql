@@ -1,0 +1,1 @@
+SELECT employee_id, (SELECT COUNT(team_id) FROM Employee AS e1 WHERE e1.team_id = e.team_id) AS team_size FROM Employee AS e;
