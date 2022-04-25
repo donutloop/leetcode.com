@@ -1,0 +1,1 @@
+SELECT customer_id FROM Customers AS c  WHERE c.year = 2021 GROUP BY customer_id HAVING SUM(c.revenue) > 0 ;
