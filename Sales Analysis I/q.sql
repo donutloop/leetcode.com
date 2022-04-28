@@ -1,0 +1,1 @@
+SELECT s1.seller_id FROM Sales AS s1  GROUP BY s1.seller_id HAVING SUM(price) = (SELECT SUM(price) AS total FROM Sales AS s GROUP BY s.seller_id ORDER BY total DESC LIMIT 1);
