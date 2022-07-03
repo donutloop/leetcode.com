@@ -5,8 +5,7 @@ SELECT
 FROM
     Sales
 GROUP BY
-    TRIM(LOWER(product_name)),
-    DATE_FORMAT(sale_date, '%Y-%m')
+    1, 2
 ORDER BY
     product_name ASC,
-    DATE_FORMAT(sale_date, '%Y-%m') ASC;
+    sale_date ASC;
