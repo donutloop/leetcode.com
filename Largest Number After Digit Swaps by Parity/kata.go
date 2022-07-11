@@ -38,20 +38,20 @@ func largestInteger(num int) int {
 	heap.Init(odd)
 	heap.Init(even)
 
-	var reordedNum int
+	num = 0
 	u := int(math.Pow(10, float64(i)))
 	for ; i >= 0; i-- {
 
 		if (bitSet & (1 << i)) == 0 {
-			reordedNum += heap.Pop(odd).(int) * u
+			num += heap.Pop(odd).(int) * u
 		} else {
-			reordedNum += heap.Pop(even).(int) * u
+			num += heap.Pop(even).(int) * u
 		}
 
 		u = u / 10
 	}
 
-	return reordedNum
+	return num
 }
 
 type IntHeap []int
