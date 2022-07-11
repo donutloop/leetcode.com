@@ -7,8 +7,6 @@ import (
 
 func largestInteger(num int) int {
 
-	tmpNum := num
-
 	odd := &IntHeap{}
 	even := &IntHeap{}
 
@@ -41,22 +39,16 @@ func largestInteger(num int) int {
 	heap.Init(even)
 
 	var reordedNum int
-	num = tmpNum
 	u := int(math.Pow(10, float64(i)))
 	for ; i >= 0; i-- {
 
 		if (bitSet & (1 << i)) == 0 {
-			n := heap.Pop(odd).(int)
-			reordedNum += n * u
+			reordedNum += heap.Pop(odd).(int) * u
 		} else {
-			n := heap.Pop(even).(int)
-			reordedNum += n * u
+			reordedNum += heap.Pop(even).(int) * u
 		}
 
 		u = u / 10
-		if u == 0 {
-			u = 1
-		}
 	}
 
 	return reordedNum
