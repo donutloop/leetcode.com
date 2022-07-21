@@ -68,9 +68,3 @@ func (pq *PriorityQueue) Push(x interface{}) {
 	item.index = n
 	*pq = append(*pq, item)
 }
-
-
-SELECT ((SUM(CASE WHEN activity_type = "open_session" THEN 1 ELSE 0 END)-(SUM(CASE WHEN activity_type = "open_session" THEN -1 ELSE 0 END)-SUM(CASE WHEN activity_type = "end_session" THEN -1 ELSE 0 END)))) AS a
-FROM Activity
-WHERE (activity_type = "open_session" OR activity_type = "end_session")
-AND activity_date BETWEEN DATE_SUB("2019-07-27", INTERVAL 30 DAY) AND "2019-07-27" GROUP BY user_id;
