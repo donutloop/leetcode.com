@@ -1,25 +1,8 @@
 package kata
 
 func parseBoolExpr(expression string) bool {
-	return parse(expression, 0)
-}
-
-func parse(expression string, i int) bool {
-
-	if IsNot(expression[i]) {
-		v, _ := parseNot(expression, i+1)
-		return v
-	} else if IsAnd(expression[i]) {
-		v, _ := parseAnd(expression, i+1)
-		return v
-	} else if IsOr(expression[i]) {
-		v, _ := parseOr(expression, i+1)
-		return v
-	} else if IsBool(expression[i]) {
-		return parseBool(expression[i])
-	}
-
-	return false
+	v, _, _ := parseUnit(expression, 0)
+	return v
 }
 
 func IsBool(c byte) bool {
@@ -41,7 +24,7 @@ func parseNot(expression string, i int) (bool, int) {
 	var value bool
 	var j int
 	for ; i < len(expression); i++ {
-		if expression[i] == ')' {
+		if IsClosed(expression[i]) {
 			j = i
 			break
 		}
@@ -65,7 +48,7 @@ func parseAnd(expression string, i int) (bool, int) {
 	var value *bool
 	var j int
 	for ; i < len(expression); i++ {
-		if expression[i] == ')' {
+		if IsClosed(expression[i]) {
 			j = i
 			break
 		}
@@ -95,7 +78,7 @@ func parseOr(expression string, i int) (bool, int) {
 	var value *bool
 	var j int
 	for ; i < len(expression); i++ {
-		if expression[i] == ')' {
+		if IsClosed(expression[i]) {
 			j = i
 			break
 		}
@@ -137,4 +120,8 @@ func parseUnit(expression string, i int) (bool, int, bool) {
 		k = -1
 	}
 	return v, k, match
+}
+
+func IsClosed(c byte) bool {
+	return c == ')'
 }
