@@ -41,23 +41,17 @@ func parseNot(expression string, i int) (bool, int) {
 	var value bool
 	var j int
 	for ; i < len(expression); i++ {
-		if IsOr(expression[i]) {
-			var k int
-			value, k = parseOr(expression, i+1)
-			i = k
-		} else if IsAnd(expression[i]) {
-			var k int
-			value, k = parseAnd(expression, i+1)
-			i = k
-		} else if IsNot(expression[i]) {
-			var k int
-			value, k = parseNot(expression, i+1)
-			i = k
-		} else if IsBool(expression[i]) {
-			value = parseBool(expression[i])
-		} else if expression[i] == ')' {
+		if expression[i] == ')' {
 			j = i
 			break
+		}
+
+		v, k, match := parseUnit(expression, i)
+		if k != -1 {
+			i = k
+		}
+		if match {
+			value = v
 		}
 	}
 	return !value, j
@@ -76,26 +70,10 @@ func parseAnd(expression string, i int) (bool, int) {
 			break
 		}
 
-		var v bool
-		var k int
-		var match bool
-		if IsOr(expression[i]) {
-			v, k = parseOr(expression, i+1)
+		v, k, match := parseUnit(expression, i)
+		if k != -1 {
 			i = k
-			match = true
-		} else if IsAnd(expression[i]) {
-			v, k = parseAnd(expression, i+1)
-			i = k
-			match = true
-		} else if IsNot(expression[i]) {
-			v, k = parseNot(expression, i+1)
-			i = k
-			match = true
-		} else if IsBool(expression[i]) {
-			v = parseBool(expression[i])
-			match = true
 		}
-
 		if match && value == nil {
 			value = new(bool)
 			*value = v
@@ -122,24 +100,9 @@ func parseOr(expression string, i int) (bool, int) {
 			break
 		}
 
-		var v bool
-		var k int
-		var match bool
-		if IsOr(expression[i]) {
-			v, k = parseOr(expression, i+1)
+		v, k, match := parseUnit(expression, i)
+		if k != -1 {
 			i = k
-			match = true
-		} else if IsAnd(expression[i]) {
-			v, k = parseAnd(expression, i+1)
-			i = k
-			match = true
-		} else if IsNot(expression[i]) {
-			v, k = parseNot(expression, i+1)
-			i = k
-			match = true
-		} else if IsBool(expression[i]) {
-			v = parseBool(expression[i])
-			match = true
 		}
 
 		if match && value == nil {
@@ -153,4 +116,25 @@ func parseOr(expression string, i int) (bool, int) {
 
 	}
 	return *value, j
+}
+
+func parseUnit(expression string, i int) (bool, int, bool) {
+	var v bool
+	k := -1
+	var match bool
+	if IsOr(expression[i]) {
+		v, k = parseOr(expression, i+1)
+		match = true
+	} else if IsAnd(expression[i]) {
+		v, k = parseAnd(expression, i+1)
+		match = true
+	} else if IsNot(expression[i]) {
+		v, k = parseNot(expression, i+1)
+		match = true
+	} else if IsBool(expression[i]) {
+		v = parseBool(expression[i])
+		match = true
+		k = -1
+	}
+	return v, k, match
 }
