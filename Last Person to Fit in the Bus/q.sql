@@ -15,4 +15,3 @@ FROM
    cte
 WHERE
    running_total <= 1000 ORDER BY running_total DESC LIMIT 1;
-    
