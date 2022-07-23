@@ -1,51 +1,42 @@
 
+
 WITH cte AS (
     (
         SELECT
-            p.player_id,
-            p.player_name,
-            1 AS win
+            c.Wimbledon AS player_id
         FROM
-            Players AS p
-                INNER JOIN Championships AS c ON p.player_id = c.Wimbledon
+            Championships AS c
     )
     UNION ALL
     (
         SELECT
-            p.player_id,
-            p.player_name,
-            1 AS win
+            c.Fr_open AS player_id
         FROM
-            Players AS p
-                INNER JOIN Championships AS c ON p.player_id = c.Fr_open
+            Championships AS c
     )
     UNION ALL
     (
         SELECT
-            p.player_id,
-            p.player_name,
-            1 AS win
+            c.US_open AS player_id
         FROM
-            Players AS p
-                INNER JOIN Championships AS c ON p.player_id = c.US_open
+            Championships AS c
     )
     UNION ALL
     (
         SELECT
-            p.player_id,
-            p.player_name,
-            1 AS win
+            c.Au_open AS player_id
         FROM
-            Players AS p
-                INNER JOIN Championships AS c ON p.player_id = c.Au_open
+            Championships AS c
     )
 )
 SELECT
-    player_id,
+    p.player_id,
     player_name,
-    COUNT(win) AS grand_slams_count
+    COUNT(c.player_id) AS grand_slams_count
 FROM
-    cte
+    Players AS p
+        INNER JOIN cte AS c ON p.player_id = c.player_id
 GROUP BY
-    player_id;
+    p.player_id;
+
 
