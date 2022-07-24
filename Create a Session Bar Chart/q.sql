@@ -18,4 +18,4 @@ SELECT bin_2 AS bin, total_2 AS total FROM cte
 UNION ALL
 SELECT bin_3 AS bin, total_3 AS total FROM cte
 UNION ALL
-SELECT bin_4 AS bin, total_4 AS total FROM cte 
+SELECT bin_4 AS bin, total_4 AS total FROM cte
