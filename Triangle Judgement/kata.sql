@@ -1,0 +1,1 @@
+SELECT x, y, z, IF((z+y > x AND x+y > z AND z+x > y), 'Yes', 'No') AS triangle FROM Triangle
