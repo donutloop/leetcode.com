@@ -1,6 +1,7 @@
 class Solution {
     public int maximumValue(String[] strs) {
         var max = 0;
+        outerLoop:
         for (var str: strs) {
             var localMax = 0;
             var j = 0;
@@ -8,9 +9,8 @@ class Solution {
                 if (Character.isLetter(str.charAt(i))) {
                     if (max < str.length()) {
                         max = str.length();
-                        localMax = 0;
                     }
-                    break;
+                    continue outerLoop;
                 }
                 var digit = Character.getNumericValue(str.charAt(i));
                 localMax += (digit * Math.pow(10.0, (double) j));
