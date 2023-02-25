@@ -22,18 +22,15 @@ class Solution {
         if (sums[0] < 0)
             sums[0] = sums[0] * -1;
 
+        min = null;
         for (var k = 1; k < n; k++) {
             sums[k] = sums[k-1] + nums[k-1];
-        }
-
-        var correction = 0;
-        min = null;
-        for (var num: sums) {
-            if (num < 1 && (min == null || num < min)) {
-                min = num;
+            if (sums[k] < 1 && (min == null || sums[k] < min)) {
+                min = sums[k];
             }
         }
 
+        var correction = 0;
         if (min != null) {
             correction = Math.abs(min.intValue())+1;
         }
