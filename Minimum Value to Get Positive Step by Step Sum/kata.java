@@ -6,11 +6,8 @@ class Solution {
 
         for (var k = 1; k < n; k++) {
             sums[k] = sums[k-1] + nums[k-1];
-        }
-
-        for (var i = 1; i < sums.length; i++) {
-            if (sums[i] < 1 && (min == null || sums[i] < min)) {
-                min = sums[i];
+            if (sums[k] < 1 && (min == null || sums[k] < min)) {
+                min = sums[k];
             }
         }
 
