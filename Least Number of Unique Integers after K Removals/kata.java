@@ -7,9 +7,7 @@ class Solution {
         }
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        for (Map.Entry<Integer, Integer> entry : counter.entrySet()) {
-            pq.add(entry.getValue());
-        }
+        counter.forEach((key, value) -> pq.add(value));
 
         while(k != 0) {
             var value = pq.poll();
