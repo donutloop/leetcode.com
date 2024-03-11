@@ -14,15 +14,16 @@ func splitNum(num int) int {
 		digits = append(digits, digit)
 	}
 
+	if len(digits) == 2 {
+		return digits[0] + digits[1]
+	}
+
 	sort.Slice(digits, func(i, j int) bool {
 		return digits[i] > digits[j]
 	})
 
 	a := digits[0]
 	b := digits[1]
-	if len(digits) == 2 {
-		return a + b
-	}
 
 	var multiplierOfA, multiplierOfB = 10, 10
 	for i := 2; i < len(digits); i++ {
