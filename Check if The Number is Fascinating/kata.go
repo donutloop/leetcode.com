@@ -18,7 +18,12 @@ func countDigits(n int, stats *[9]int) bool {
 		if digit == 0 {
 			return false
 		}
-		stats[digit-1]++
+		digit = digit - 1
+		currentCount := stats[digit]
+		if currentCount > 0 {
+			return false
+		}
+		stats[digit]++
 	}
 	return true
 }
