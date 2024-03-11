@@ -2,37 +2,26 @@ package kata
 
 func isFascinating(n int) bool {
 	var stats = [9]int{}
+	var tracker int = 0
 	for i := 1; i <= 3; i++ {
-		ok := countDigits(n*i, &stats)
+		ok := countDigits(n*i, &stats, &tracker)
 		if !ok {
 			return false
 		}
 	}
-	return assert(&stats)
+	return true
 }
 
-func countDigits(n int, stats *[9]int) bool {
+func countDigits(n int, stats *[9]int, tracker *int) bool {
 	for n > 0 {
 		var digit = n % 10
 		n = n / 10
-		if digit == 0 {
-			return false
-		}
 		digit = digit - 1
-		currentCount := stats[digit]
-		if currentCount > 0 {
+		if digit == -1 || stats[digit] > 0 {
 			return false
 		}
 		stats[digit]++
+		*tracker++
 	}
-	return true
-}
-
-func assert(stats *[9]int) bool {
-	for _, count := range stats {
-		if count == 0 || count > 1 {
-			return false
-		}
-	}
-	return true
+	return *tracker%3 == 0
 }
