@@ -1,17 +1,22 @@
 package kata
 
-import "sort"
+import (
+	"math"
+	"sort"
+)
 
 func splitNum(num int) int {
 	if num <= 9 {
 		return num
 	}
 
-	digits := make([]int, 0)
+	digits := make([]int, int(math.Log10(float64(num)))+1)
+	var i int
 	for num > 0 {
 		var digit = num % 10
 		num = num / 10
-		digits = append(digits, digit)
+		digits[i] = digit
+		i++
 	}
 
 	if len(digits) == 2 {
