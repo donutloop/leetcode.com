@@ -1,16 +1,14 @@
 package kata
 
 func minimumAverageDifference(nums []int) int {
-	var sum int
-	var count int
+	var suffixSum int
+	var suffixCount int
 	for _, num := range nums {
-		sum += num
-		count++
+		suffixSum += num
+		suffixCount++
 	}
 
 	var prefixSum int
-	suffixSum := sum
-	suffixCount := count
 	var min = -1
 	var idx = 0
 	for i, num := range nums {
